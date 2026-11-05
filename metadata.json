@@ -1,0 +1,6 @@
+{
+  "name": "AAU Indoor Navigator",
+  "description": "High-precision indoor wayfinding and campus companion for Al Ain University, featuring live navigation simulation, 3D floorplans, and timetable integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

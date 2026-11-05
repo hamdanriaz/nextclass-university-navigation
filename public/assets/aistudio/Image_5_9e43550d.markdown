@@ -1,0 +1,202 @@
+---
+name: AAU Indoor Navigator
+colors:
+  surface: '#10141a'
+  surface-dim: '#10141a'
+  surface-bright: '#353940'
+  surface-container-lowest: '#0a0e14'
+  surface-container-low: '#181c22'
+  surface-container: '#1c2026'
+  surface-container-high: '#262a31'
+  surface-container-highest: '#31353c'
+  on-surface: '#dfe2eb'
+  on-surface-variant: '#bacbb9'
+  inverse-surface: '#dfe2eb'
+  inverse-on-surface: '#2d3137'
+  outline: '#859585'
+  outline-variant: '#3b4a3d'
+  surface-tint: '#00e475'
+  primary: '#75ff9e'
+  on-primary: '#003918'
+  primary-container: '#00e676'
+  on-primary-container: '#00612e'
+  inverse-primary: '#006d35'
+  secondary: '#adc6ff'
+  on-secondary: '#002e6a'
+  secondary-container: '#0566d9'
+  on-secondary-container: '#e6ecff'
+  tertiary: '#71fdbf'
+  on-tertiary: '#003824'
+  tertiary-container: '#50e0a5'
+  on-tertiary-container: '#006041'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#62ff96'
+  primary-fixed-dim: '#00e475'
+  on-primary-fixed: '#00210b'
+  on-primary-fixed-variant: '#005226'
+  secondary-fixed: '#d8e2ff'
+  secondary-fixed-dim: '#adc6ff'
+  on-secondary-fixed: '#001a42'
+  on-secondary-fixed-variant: '#004395'
+  tertiary-fixed: '#6ffbbe'
+  tertiary-fixed-dim: '#4edea3'
+  on-tertiary-fixed: '#002113'
+  on-tertiary-fixed-variant: '#005236'
+  background: '#10141a'
+  on-background: '#dfe2eb'
+  surface-variant: '#31353c'
+typography:
+  display-lg:
+    fontFamily: Inter
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+  display-lg-mobile:
+    fontFamily: Inter
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+  headline-lg:
+    fontFamily: Inter
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+  headline-md:
+    fontFamily: Inter
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+  headline-sm:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-lg:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 18px
+  label-md:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+  label-sm:
+    fontFamily: Inter
+    fontSize: 10px
+    fontWeight: '600'
+    lineHeight: 14px
+rounded:
+  sm: 0.5rem
+  DEFAULT: 1rem
+  md: 1.5rem
+  lg: 2rem
+  xl: 3rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-mobile: 0.75rem
+  margin: 1rem
+  margin-tablet: 1.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+The design system establishes an ultra-refined, high-precision wayfinding interface crafted specifically for Al Ain University (AAU) campuses in Abu Dhabi and Al Ain. Blending technical institutional rigor with futuristic architectural navigation, the aesthetic pairs Deep Slate Glassmorphism with electric tactical accents. 
+
+### Target Audience & Psychology
+- **Primary Users:** University students, visiting academics, prospective students, and campus visitors navigating complex multi-floor academic atriums, labs, lecture halls, and administrative offices.
+- **Emotional Resonance:** Calm orientation amidst rush-hour academic transitions, instant clarity, technological prestige, and frictionless bilingual navigation.
+- **Design Archetype:** Precision Spatial Utility. Clean, luminescent, dark-mode surfaces elevate visual hierarchy, keeping eyes rested under harsh desert daylight while allowing vibrant navigation cues to pop cleanly across 3D floor plans.
+
+## Colors
+The color architecture relies on high-contrast luminescent beacons layered against deep obsidian surfaces to maintain maximum legibility on OLED mobile screens and in varying outdoor-to-indoor lighting conditions across campus.
+
+### Canvas & Surface Architecture
+- **Base Canvas (`#090D12`):** Primary viewport backdrop for 3D engine render passes and system backgrounds.
+- **Surface Elevation 1 (`#0D1117`):** Base sheet, bottom sheets, persistent drawers, and primary cards.
+- **Surface Elevation 2 (`#161B22`):** Interactive card layers, floating search surfaces, and active floor selector nodes.
+- **Glass Overlay Borders (`#1F2937` / `#374151`):** Sub-pixel and 1px crisp separation strokes ensuring structural definition against dark map tiles.
+
+### Signal & Accent Mechanics
+- **Neon Route Green (`#00E676`):** The primary navigation vector. Reserved strictly for active wayfinding paths, live indoor positioning heads-up vectors, destination pins, and affirmative navigation states.
+- **Route Solid Green (`#10B981`):** Used for non-glowing foundational accents, accessibility ramps, elevator availability badges, and success badges.
+- **Beacon Tech Blue (`#3B82F6`):** Secondary utility tier. Represents user current location pulse ring, Wi-Fi/BLE beacon telemetry status, multi-modal floor transit icons (stairs/elevators), and ancillary campus service filters.
+- **Informational Alert Amber (`#F59E0B`):** Temporary classroom closures, construction reroutes, or maintenance alerts.
+- **Critical Red (`#EF4444`):** Emergency exits, restricted faculty-only zones, and route-lost fallbacks.
+
+## Typography
+Typographic rules prioritize hyper-legibility across rapid scanning motions. The Latin typography is built with **Inter**, selected for its systematic geometric neutral base, tall x-height, and superior rendering at micro-scales on mobile glass.
+
+### Bilingual Typographic Pairing
+For native Arabic localization (`ar-AE`), the design system binds directly to **IBM Plex Sans Arabic** as the primary counterpart (with Tajawal as secondary editorial pairing):
+- Match Latin font weights systematically: Inter SemiBold maps to IBM Plex Sans Arabic SemiBold; Inter Medium maps to Arabic Medium.
+- Set line heights +4px wider on Arabic layout passes to comfortably accommodate ascenders and descenders without clipping diacritics.
+- Number representations inside live route metrics default to standard Western Arabic numerals (`0-9`) in English mode and Eastern Arabic numerals (`٠-٩`) when configured by local user preference, always tabular-spaced (`font-variant-numeric: tabular-nums`) to prevent layout jump during real-time step calculations.
+
+## Layout & Spacing
+The layout model is tailored around a map-first spatial canvas. The foundational layer is occupied by the interactive campus floor model, overlaid by responsive sheets, floating controls, and dynamic navigation pods.
+
+### Responsive Structure & Adaptability
+- **Mobile Handheld (360px - 480px):** Single-column contextual stack. Map canvas takes 100% viewport. Navigation controls live in a floating bottom sheet (`margin: 1rem`), while floor level pickers align vertically to the safe right rail (or left rail in RTL Arabic view).
+- **Tablet / Large Mobile Foldables (481px - 840px):** 8-column layout. Split-pane layout surfaces navigation queues on a 360px floating docked card anchored to the leading side, leaving the canvas uninterrupted.
+- **Rhythm Rules:** All layout coordinates conform to a strict 4px/8px sub-grid. Dynamic UI padding shifts from `space-sm` (8px) within compact metric chips to `space-lg` (24px) for full itinerary step containers.
+
+## Elevation & Depth
+Elevation is constructed via Frosted Dark Glassmorphic layering instead of opaque drop shadows, ensuring map details beneath sheets remain subtly traceable.
+
+### Surface Tiers
+- **Tier 0 (Map Floor Grid):** Raw vector planes, room fills, boundary lines, and 3D extrusion geometry.
+- **Tier 1 (Surface Glass Base):** `background: rgba(13, 17, 23, 0.82)`, `backdrop-filter: blur(16px)`, `border: 1px solid rgba(31, 41, 55, 0.8)`. Used for bottom itinerary drawers and search header inputs.
+- **Tier 2 (Floating Controls & Pods):** `background: rgba(22, 27, 34, 0.88)`, `backdrop-filter: blur(24px)`, `border: 1px solid rgba(55, 65, 81, 0.9)`, `box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.6)`. Used for floor switches, turn-by-turn prompts, and POI tooltips.
+- **Tier 3 (Active Beacon & Primary Callout):** `background: #00E676`, `box-shadow: 0 0 24px 0 rgba(0, 230, 118, 0.45)`. Radiates a luminous halo, drawing immediate focus to ongoing turn markers and vital actions.
+
+## Shapes
+The shape language is aerodynamic and thumb-friendly, leveraging continuous pill contours (`roundedness: 3`) to contrast cleanly against rigid 90-degree architectural floor boundaries.
+
+### Application Rules
+- **Full Pills (`rounded-full`):** Global floor selector buttons, active route banners, action pills, chip filters, and user geolocation status pods.
+- **Nested Card Containers (`rounded-xl` / 1.5rem):** Search preview cards, classroom detail drawers, and indoor turn instruction envelopes.
+- **Interactive Inputs:** Completely pill-rounded text inputs provide frictionless tactile targets for one-handed operation while walking between buildings.
+
+## Components
+
+### Buttons & Action Triggers
+- **Primary Wayfinding CTA:** Fully rounded pill container. Solid `#00E676` background with `#090D12` bold typography. Active state scales to 0.98 with a radial glow (`box-shadow: 0 0 20px rgba(0, 230, 118, 0.4)`).
+- **Secondary Utility Action:** Frosted glass pill (`rgba(22, 27, 34, 0.8)`), 1px `#374151` border, `#3B82F6` icon and text label. 
+- **Destructive / Cancel Route:** Glass container with `#EF4444` micro-stroke and dimmed text, transitioning to solid warning state on long press.
+
+### Wayfinding Chips & Floor Selectors
+- **Vertical Floor Selector Rail:** A stacked floating column of pill capsules (`G`, `1`, `2`, `3`, `B1`). Inactive states feature `#161B22` background with `#9CA3AF` text. The active floor illuminates with `#00E676` fill, `#090D12` bold typography, and an exterior neon ring.
+- **POI Quick-Filter Chips:** Single-line horizontal scrollable row with rounded-full shapes. Inactive: `#161B22` with `#D1D5DB` text. Active: `#3B82F6` tint with a subtle inner blue stroke, featuring high-contrast iconography (e.g., Cafeteria, Library, Dean's Office, Prayer Rooms).
+
+### Search & Input Fields
+- **Omni-Search Bar:** Floating pill input housing search icon, voice dictation, and QR scanner trigger. Frosted `#0D1117` at 85% opacity, `backdrop-filter: blur(16px)`, outlined with a delicate 1px `#1F2937` stroke. Focus states highlight the border to `#3B82F6` with a soft blue diffusion.
+
+### Turn-By-Turn Navigation Card
+- **Header Floating Prompt:** Anchored to the top safe area. Contains turn icon (e.g., "In 15m, turn right past Lab 204"), distance counters in high-visibility Inter SemiBold, and floor transition indicators (e.g., "Take Elevator B to Floor 2"). Uses high-grade frosted glass (`#0D1117` background with 92% opacity) bounded by a `#10B981` leading edge marker.
+
+### High-Clarity Wayfinding Icons
+- **Icon Design Guidelines:** Minimalist, geometric 2px stroke weight with 24x24 bounding boxes. Rounded endpoints matching the design system's pill curvature. Highlighting cues pair `#00E676` for active path indicators and `#3B82F6` for utility amenities (wheelchair ramps, prayer spaces, rest areas, IT helpdesks).
